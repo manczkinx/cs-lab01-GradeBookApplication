@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-
+using System.Runtime;
+using System.Collections.Immutable;
+using System.Reflection.Metadata.Ecma335;
 
 namespace GradeBook.GradeBooks
 {
@@ -14,6 +16,7 @@ namespace GradeBook.GradeBooks
     {
         public string Name { get; set; }
         public List<Student> Students { get; set; }
+        public List<Student> Sudents2 { get; set; }
         
         public GradeBookType Type { get; set; }
 
