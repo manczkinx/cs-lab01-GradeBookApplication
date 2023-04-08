@@ -45,6 +45,7 @@ namespace GradeBook.GradeBooks
 
                 double LetterPlace2 = ((j + 1) / c) * 100;
                 Console.WriteLine(LetterTop[j] + " " + LetterPlace + " " + LetterPlace2 + " " + averageGrade);
+                Console.WriteLine(LetterTop[j] == averageGrade);
             }
 
             if (LetterPlace <= 20)

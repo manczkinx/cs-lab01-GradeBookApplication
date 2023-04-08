@@ -2,10 +2,13 @@
 using System;
 
 namespace GradeBook.UserInterfaces
+
 {
     public static class StartingUserInterface
     {
         public static bool Quit = false;
+        private static string name;
+
         public static void CommandLoop()
         {
             while (!Quit)
@@ -33,6 +36,7 @@ namespace GradeBook.UserInterfaces
 
         public static void CreateCommand(string command)
         {
+
             var parts = command.Split(' ');
             if (parts.Length != 4)
             {

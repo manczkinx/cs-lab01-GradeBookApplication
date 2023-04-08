@@ -118,7 +118,7 @@ namespace GradeBook.GradeBooks
             switch (letterGrade)
             {
                 case 'A':
-                    if (studentType != StudentType.Standard)
+                    if (studentType != StudentType.Standard && isWeighted)
                     {
                         return 5;
                     }
